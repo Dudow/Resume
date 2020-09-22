@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font: 400 14px 'Epilogue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.main{
+    background-color: #1c1a1f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    background-image: url("../assets/treco.png");
+    background-repeat: no-repeat;
+    background-position: 110% 40px;
+}
+
+.resume{
+    width: 100%;
+    max-width: 900px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 900px;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.apresentation{
+    width: 100%;
+    min-height: 500px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(221, 255, 239);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title{    
+    color: rgb(221, 255, 239);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Monoton', cursive;
+    z-index: 1;
+}
+
+.title strong{
+    color: #1de195;
+}
+
+.subtitle{
+    font: 400 14px 'Epilogue', sans-serif;
+    padding-left: 30px;
+}
+
+.mainImage{
+    height: 360px;
+    z-index: 0;
+}
+
+.content{
+    width: 100%;
+    max-width: 900px;
+    margin-top: 350px;
+    font: 400 14px 'Epilogue', sans-serif;
+    color: rgb(221, 255, 239);
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    font-size: 21px;
+}
+
+.info h1{
+    margin-bottom: 30px;
+    color: #1de195;
+    text-decoration: underline;
+}
+
+.info strong{
+    color: #1de1d7;
+}
+
+.info p{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.info a{
+    text-decoration: none;
+    color: rgb(221, 255, 239);
+    transition: all 0.2s;
+}
+
+.info a:hover{
+    text-decoration: none;
+    color: #1de195;
+}
+
+.stack{
+    font-size: 21px;
+    text-align: right;
+}
+
+.stack h1{
+    margin-bottom: 30px;
+    color: #1de195;
+    text-decoration: underline;
+}
+
+.stack strong{
+    color: #1de1d7;
+}
+
+.stack p{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.hobbie{
+    font-size: 21px;
+    
+}
+
+.hobbie h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #1de195;
+    text-decoration: underline;
+}
+
+.hobbie strong{
+    color: #1de1d7;
+}
+
+.hobbie p{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    margin-top: 100px;
+    width: 100vw;
+    height: 35px;
+    background-color: rgba(221, 255, 239, 0.192);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: #1de195;
+}
