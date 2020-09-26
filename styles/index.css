@@ -12,6 +12,13 @@
 html {
     height: 100%;
     overflow-x: hidden;
+    animation: loadcontainer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 body {
@@ -21,8 +28,6 @@ body {
     padding: 0;
     font: 400 14px 'Epilogue', sans-serif;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    filter: blur(0);
 }
 
 a {
@@ -203,15 +208,20 @@ textarea {
     width: 100vw;
     height: 100vh;
     opacity: 0;
+    display: none;
     animation: load;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     position: absolute;
     background-color: #27232e;
-    z-index: 3;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loading .title{
+    font-size: 3rem;
 }
 
 .loading img{
@@ -219,8 +229,36 @@ textarea {
     margin-right: 30px;
 }
 
+@media (max-width: 650px){
+    .mainImage{
+        display: none;
+    }
+
+    .content{
+        margin-top: 30px;
+    }
+}
+
 @keyframes load {
-    0% {opacity: 1}
-    50% {opacity: 1}
-    100% {opacity: 0}
+    0% {
+        opacity: 1;
+        display: initial;
+        z-index: 2;
+    }
+    50% {
+        opacity: 1;
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        display: initial;
+        z-index: 2;
+    }
+}
+
+@keyframes loadcontainer{
+    0% {
+        overflow-y: hidden;
+    }
+    100% {overflow-y: hidden;}
 }
