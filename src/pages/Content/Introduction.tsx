@@ -1,9 +1,9 @@
-import { Box, Flex, Icon, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsChevronCompactDown, BsGithub, BsLinkedin } from "react-icons/bs";
 import { NavButton } from "../../Components/NavButton";
 
-export const Introduction = () => {
+export default function Introduction() {
   return (
     <>
       <Flex height="100vh" w="100%" id="home">
@@ -111,4 +111,4 @@ export const Introduction = () => {
       </Flex>
     </>
   );
-};
+}

@@ -11,9 +11,9 @@ import {
   SiWhatsapp,
 } from "react-icons/si";
 import { NavButton } from "../../Components/NavButton";
-import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
+import { BsChevronCompactUp } from "react-icons/bs";
 
-export const AboutMe = () => {
+export default function AboutMe() {
   return (
     <>
       <Flex
@@ -147,4 +147,4 @@ export const AboutMe = () => {
       </Flex>
     </>
   );
-};
+}
