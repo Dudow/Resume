@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { AboutMe } from "./Content/AboutMe";
-import { Introduction } from "./Content/Introduction";
-import { Projects } from "./Content/Projects";
+import AboutMe from "./Content/AboutMe";
+import Introduction from "./Content/Introduction";
+import Projects from "./Content/Projects";
 
 const Home: NextPage = () => {
   return (
