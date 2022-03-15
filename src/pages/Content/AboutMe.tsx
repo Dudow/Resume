@@ -142,7 +142,7 @@ export default function AboutMe() {
           bg="gray.800"
           border="0"
           color="#5f52cc"
-          _hover={{ borderColor: "pink.800" }}
+          _hover={{ bg: "gray.900", boxShadow: "dark-lg" }}
         />
       </Flex>
     </>
