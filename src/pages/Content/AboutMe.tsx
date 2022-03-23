@@ -11,13 +11,13 @@ import {
   SiWhatsapp,
 } from "react-icons/si";
 import { NavButton } from "../../Components/NavButton";
-import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
+import { BsChevronCompactUp } from "react-icons/bs";
 
 export const AboutMe = () => {
   return (
     <>
       <Flex
-        height="100vh"
+        minHeight="100vh"
         w="100%"
         justifyContent="space-between"
         id="aboutMe"
@@ -26,9 +26,10 @@ export const AboutMe = () => {
         <Flex
           p={10}
           flexDir="column"
-          flex={3}
           className="aboutMePattern"
           justifyContent="space-between"
+          width="100%"
+          flex={{ base: 1, md: 10, lg: 3 }}
         >
           <Box>
             <Image
@@ -38,72 +39,74 @@ export const AboutMe = () => {
               height={60}
             />
           </Box>
-          <Flex flexDir="column">
-            <Text lineHeight={0} color="#8cc0dc">
-              Yo!
-            </Text>
-            <Text fontSize="5xl" marginLeft="-4px" color="#8f87ce">
-              Dudow here
-            </Text>
-            <Text lineHeight={0} color="#8cc0dc">
-              Your cutest Frontend developer
-            </Text>
-            <Flex mt={10} gap={3}>
-              <AboutMeMiniCard
-                destiny="https://anilist.co/user/DinossauroTarado/"
-                image={SiAnilist}
-              />
-              <AboutMeMiniCard
-                destiny="https://www.goodreads.com/user/show/138261088-dudow"
-                image={SiGoodreads}
-              />
-              <AboutMeMiniCard
-                destiny="https://www.linkedin.com/in/eduardo-nunes-5768a0168/"
-                image={SiLinkedin}
-              />
-              <AboutMeMiniCard
-                destiny="https://github.com/Dudow"
-                image={SiGithub}
-              />
-              <AboutMeMiniCard
-                destiny="mailto:edu30.nm@gmail.com.br"
-                image={SiGmail}
-              />
-              <AboutMeMiniCard
-                destiny="https://t.me/virgemAosVinte"
-                image={SiTelegram}
-              />
-              <AboutMeMiniCard
-                destiny="https://wa.me/5543999672966?text=E aí, Dudow!"
-                image={SiWhatsapp}
-              />
-            </Flex>
-            <Flex
-              gap={6}
-              p={6}
-              bg="gray.900"
-              borderRadius="lg"
-              mt={10}
-              w="fit-content"
-              boxShadow="dark-lg"
-            >
-              <Flex flexDir="column">
-                <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                  1
-                </Text>
-                <Text>Year experience</Text>
+          <Flex flexDir="column" maxHeight="60%">
+            <Flex flexDir="column">
+              <Text lineHeight={0} color="#8cc0dc">
+                Yo!
+              </Text>
+              <Text fontSize="5xl" marginLeft="-4px" color="#8f87ce">
+                Dudow here
+              </Text>
+              <Text lineHeight={0} color="#8cc0dc">
+                Your cutest Frontend developer
+              </Text>
+              <Flex mt={10} gap={3}>
+                <AboutMeMiniCard
+                  destiny="https://anilist.co/user/DinossauroTarado/"
+                  image={SiAnilist}
+                />
+                <AboutMeMiniCard
+                  destiny="https://www.goodreads.com/user/show/138261088-dudow"
+                  image={SiGoodreads}
+                />
+                <AboutMeMiniCard
+                  destiny="https://www.linkedin.com/in/eduardo-nunes-5768a0168/"
+                  image={SiLinkedin}
+                />
+                <AboutMeMiniCard
+                  destiny="https://github.com/Dudow"
+                  image={SiGithub}
+                />
+                <AboutMeMiniCard
+                  destiny="mailto:edu30.nm@gmail.com.br"
+                  image={SiGmail}
+                />
+                <AboutMeMiniCard
+                  destiny="https://t.me/virgemAosVinte"
+                  image={SiTelegram}
+                />
+                <AboutMeMiniCard
+                  destiny="https://wa.me/5543999672966?text=E aí, Dudow!"
+                  image={SiWhatsapp}
+                />
               </Flex>
-              <Flex flexDir="column">
-                <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                  33
-                </Text>
-                <Text>Books read</Text>
-              </Flex>
-              <Flex flexDir="column">
-                <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                  0
-                </Text>
-                <Text>Girlfriends</Text>
+              <Flex
+                gap={6}
+                p={6}
+                bg="gray.900"
+                borderRadius="lg"
+                mt={10}
+                w="fit-content"
+                boxShadow="dark-lg"
+              >
+                <Flex flexDir="column">
+                  <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
+                    1
+                  </Text>
+                  <Text>Year experience</Text>
+                </Flex>
+                <Flex flexDir="column">
+                  <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
+                    33
+                  </Text>
+                  <Text>Books read</Text>
+                </Flex>
+                <Flex flexDir="column">
+                  <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
+                    0
+                  </Text>
+                  <Text>Girlfriends</Text>
+                </Flex>
               </Flex>
             </Flex>
           </Flex>
@@ -115,6 +118,7 @@ export const AboutMe = () => {
           flex={2}
           position="relative"
           className="aboutMePattern2"
+          display={{ base: "none", md: "flex" }}
         >
           <Text
             position="absolute"
