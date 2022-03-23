@@ -13,7 +13,7 @@ import {
 import { NavButton } from "../../Components/NavButton";
 import { BsChevronCompactUp } from "react-icons/bs";
 
-export const AboutMe = () => {
+export default function AboutMe() {
   return (
     <>
       <Flex
@@ -146,9 +146,9 @@ export const AboutMe = () => {
           bg="gray.800"
           border="0"
           color="#5f52cc"
-          _hover={{ borderColor: "pink.800" }}
+          _hover={{ bg: "gray.900", boxShadow: "dark-lg" }}
         />
       </Flex>
     </>
   );
-};
+}

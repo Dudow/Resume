@@ -1,10 +1,10 @@
-import { Box, Flex, Icon, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
 import { NavButton } from "../../Components/NavButton";
 import { ProjectCard } from "../../Components/ProjectCard";
 
-export const Projects = () => {
+export default function Projects() {
   return (
     <>
       <Flex height="100vh" w="100%" id="projects">
@@ -96,4 +96,4 @@ export const Projects = () => {
       </Flex>
     </>
   );
-};
+}
