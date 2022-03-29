@@ -48,7 +48,7 @@ export default function Introduction() {
               fontSize={["200px", "100px"]}
               letterSpacing="40px"
               pl="40px"
-              textShadow="1px 1px #3237b8"
+              textShadow="1px 1px #425ad4"
               fontFamily="Monoton"
               as="h1"
               color="white"
@@ -62,7 +62,7 @@ export default function Introduction() {
               destinyId="#projects"
               left="50%"
               bottom={10}
-              bg="blue"
+              bg="#425ad4"
               border="0"
               _hover={{
                 boxShadow: "dark-lg",
@@ -81,7 +81,7 @@ export default function Introduction() {
               <NavButton
                 icon={BsGithub}
                 destinyId="https://github.com/Dudow"
-                bg="blue"
+                bg="#425ad4"
                 border="0"
                 position="static"
                 transform="none"
@@ -94,7 +94,7 @@ export default function Introduction() {
               <NavButton
                 icon={BsLinkedin}
                 destinyId="https://www.linkedin.com/in/eduardo-nunes-5768a0168/"
-                bg="blue"
+                bg="#425ad4"
                 border="0"
                 position="static"
                 transform="none"
