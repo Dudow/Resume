@@ -71,14 +71,6 @@ export default function AboutMe() {
                   destiny="mailto:edu30.nm@gmail.com.br"
                   image={SiGmail}
                 />
-                <AboutMeMiniCard
-                  destiny="https://t.me/virgemAosVinte"
-                  image={SiTelegram}
-                />
-                <AboutMeMiniCard
-                  destiny="https://wa.me/5543999672966?text=E aí, Dudow!"
-                  image={SiWhatsapp}
-                />
               </Flex>
               <Flex
                 gap={6}
@@ -91,21 +83,21 @@ export default function AboutMe() {
               >
                 <Flex flexDir="column">
                   <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                    1
+                    2.5
                   </Text>
-                  <Text>Year experience</Text>
+                  <Text>Years of experience</Text>
                 </Flex>
                 <Flex flexDir="column">
                   <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                    33
+                    48
                   </Text>
                   <Text>Books read</Text>
                 </Flex>
                 <Flex flexDir="column">
                   <Text fontSize="3xl" fontWeight="bold" color="#8f87ce">
-                    0
+                    1
                   </Text>
-                  <Text>Girlfriends</Text>
+                  <Text>Wife</Text>
                 </Flex>
               </Flex>
             </Flex>
